@@ -8,6 +8,9 @@ def index(request):
 def products(request):
     return render(request, 'products/products.html')
 
+def security(request):
+    return render(request, 'products/security.html')
+
 def context(request):
     context = { 'title':'Store',
                    'header':'Салам ежжжжжжжжжжжи!',
