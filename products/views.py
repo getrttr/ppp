@@ -4,15 +4,17 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'products/index.html')
 
-
 def products(request):
     return render(request, 'products/products.html')
 
-def security(request):
-    return render(request, 'products/security.html')
+def email(request):
+    return render(request, 'products/email_verification.html')
 
-def context(request):
-    context = { 'title':'Store',
-                   'header':'Салам ежжжжжжжжжжжи!',
-                   'username':'Костянчик',}
-    return render(request, 'products/context.html', context)
+def login(request):
+    return render(request, 'products/login.html')
+
+def profile(request):
+    return render(request, 'products/profile.html')
+
+def register(request):
+    return render(request, 'products/register.html')
