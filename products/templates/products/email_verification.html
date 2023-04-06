@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>GeekShop - Подтверждение электронной почты</title>
-    <link href="/css/auth.css" rel="stylesheet"/>
+    <title>Stalinshop</title>
+    <link href="{% static /css/auth.css" %}" rel="stylesheet"/>
+     <link rel="icon" href="{% static "vendor/img/favicon.ico" %}">
 </head>
 <body class="bg-primary">
 <div id="layoutAuthentication">
@@ -23,7 +26,7 @@
                                 <h4>Ваша учетная запись успешно подтверждена!</h4>
                             </div>
                             <div class="card-footer text-center">
-                                <div class="small"><a href="login.html">Продолжить</a></div>
+                                <div class="small"><a href="login">Продолжить</a></div>
                             </div>
                         </div>
                     </div>
